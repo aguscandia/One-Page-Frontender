@@ -25,3 +25,7 @@ a {
 .logo span {
     color: #d65a31;
 }
+
+img {
+    max-width: 100%;
+}
