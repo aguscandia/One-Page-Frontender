@@ -8,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Gugi&family=Monda:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./variables.css">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./descargas.css">
+    <link rel="stylesheet" href="./forms.css">
+
 </head>
 <body>
     <nav class="navbar">
@@ -86,7 +89,36 @@
 
         <section id="comunidad">
             <h1>Comunidad</h1>
-            <p>Crear aqui un formulario para subscripción</p>
+            <form action="" id="subscribe">
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Quién eres">
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Tu email (no te enviaremos SPAM)">
+                </p>
+
+                <p>
+                    <label for="alias">Alias:</label>
+                    <input type="text" name="alias" id="alias" placeholder="Tienes un alias para el juego">
+                </p>
+
+                <p>
+                    <input type="checkbox" name="boletin" id="boletin">
+                    <label for="boletin">¿Quieres suscribirte a nuestro boletin de novedades?</label>
+                </p>
+
+                <p>
+                    <label for="bio">Sobre ti</label>
+                    <textarea name="bio" id="form-bio" cols="30" rows="10" placeholder="Cuéntanos algo sobre tu vida"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
         </section>
 
         <section id="galeria">
