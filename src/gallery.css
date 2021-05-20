@@ -19,11 +19,26 @@
     position: relative;
     margin: 10px;
 }
+
 .gallery-overlay {
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
+    top: 100%;
     background-color: rgba( 0, 0, 0, .65);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+    top: 75%;
+}
+
+.gallery-overlay .content {
+    font-size: 1.1rem;
 }
